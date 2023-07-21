@@ -49,9 +49,8 @@ It is available in
 https://drive.google.com/file/d/1V7vmPiteR2rZ_mGS5CtzUwluMFvhSqwq/view?usp=sharing
 ### demonstration
 
+https://youtu.be/stjEuA5jn50
 
-[https://user-images.githubusercontent.com/81318835/235745052-187538a4-68ee-4b16-af56-bceb742c6db2.mp4
-](https://youtu.be/stjEuA5jn50)
 ## Model
 image of a refinement layer in the Bounded Future MSTCN++
 ![bounded future](figs/bf.PNG)
