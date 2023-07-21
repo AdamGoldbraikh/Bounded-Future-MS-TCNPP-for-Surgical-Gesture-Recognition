@@ -49,7 +49,11 @@ It is available in
 https://drive.google.com/file/d/1V7vmPiteR2rZ_mGS5CtzUwluMFvhSqwq/view?usp=sharing
 ### demonstration
 
-https://youtu.be/stjEuA5jn50
+
+
+https://github.com/AdamGoldbraikh/Bounded-Future-MS-TCNPP-for-Surgical-Gesture-Recognition/assets/46340382/e733f5a1-62b4-45b2-b6ae-82b2f9fb414a
+
+
 
 ## Model
 image of a refinement layer in the Bounded Future MSTCN++
