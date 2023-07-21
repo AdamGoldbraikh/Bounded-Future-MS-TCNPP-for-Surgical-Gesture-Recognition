@@ -70,11 +70,14 @@ For example, as seen in the figure below, $NI_3(8) = \lbrace{3, 7, 8, 11}\rbrace
 <br>
 For $l\in [L-1]$, it is defined as 
 $$NI_l(t) = \bigcup_{t'\in NI_{l+1}(t): t'\geq 0} DNI_l(t')$$
-![demonstration](figs/demonstration.PNG)
+
+![demonstration](/figs/demonstration.PNG)
 
 ### Initializing a Refinement Stage 
-![init](figs/refinement_init.PNG)
-\
+
+
+![init](/figs/refinement_init.PNG)
+
 In the initialization of the queue of each layer l, we will calculate the first $\max NI_l(0)$ vectors. <br>
 For example, in the figure above, notice that the non padding part is the result of the residual convolution (including the padding) of the layer below.
 Since the left padding size of each layer is known, given the queue of the layer below, we can calculate the queue of this layer.
@@ -90,13 +93,21 @@ Like in the refinement, we need to calculate how much vectors we will need in th
 
 
 ### Getting The Next Features Vector in a Refinement Stage   
-![next](figs/refinement_next.PNG)
-<br>
+
+
+![r_next](figs/refinement_next.PNG)
+
+
+
 After $t=0$ has been calculated, in order to calculate the next features vector, we will need to update the queue of the top layer by adding the next features vector $(t = 4)$, and for that, we need to update the queue below and so on, until the bottom of the stage. So, getting the next feature vector is a recursive operation. 
 In order to calculate the next features vector in every layer, we only need to save the $\text{(max length = ) } 2\cdot \delta(l)+1$ rightmost vectors after updating the queue 
 where $\delta(l)$ is the dialation of the convolution.
-### Getting The Next Features Vector in a Prediction Generation Stage   
-![next](figs/prediction_next.PNG)
+### Getting The Next Features Vector in a Prediction Generation Stage 
+
+
+![p_next](figs/prediction_next.PNG)
+
+
 Similar to the refinement stage, however here $\text{max length = } 2\cdot \max\lbrace \delta_1(l), \delta_2(l)\rbrace+1$
 
 ## Convolution Trick:
